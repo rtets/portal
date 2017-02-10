@@ -1,0 +1,39 @@
+{
+  "name": "portal",
+  "version": "0.1.0",
+  "description": "discover...",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtets/portal.git"
+  },
+  "keywords": [
+    "portal",
+    "discover"
+  ],
+  "author": "rtets",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rtets/portal/issues"
+  },
+  "homepage": "https://github.com/rtets/portal#readme",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "express": "4.14.1",
+    "frontend-dependencies": "0.2.1",
+    "jasmine": "2.5.3",
+    "jquery": "3.1.1",
+    "react": "15.4.2"
+  },
+  "frontendDependencies": {
+    "target": "static/packages",
+    "packages": [
+      "react",
+      "bootstrap"
+    ]
+  }
+}
