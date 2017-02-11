@@ -1,3 +1,14 @@
+section {
+    min-height: 350px;
+    padding-top: 60px;
+}
+
+.section-splash {
+    background-image: url('/img/splash.jpg');
+    background-size: cover;
+    min-height: 450px;
+}
+
 .navbar-brand {
   padding: 0px;
 }

@@ -42,26 +42,12 @@
             </div>
     </nav>
 
-    <br />
-    <br />
-    <br />
 
-    <section id="splash">
+    <section id="splash" class="section-splash">
 
-        <h1> Navigate </h1>
+        <h1> Portal Splash </h1>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
 
     </section>
 
@@ -159,19 +145,19 @@
           </section>
 
           <section id="workspaces">
-
+              <h1>Workspaces</h1>
 
 
           </section>
 
           <section id="community" class="alternate-section">
-
+              <h1>Community</h1>
 
 
           </section>
 
           <section id="help">
-
+              <h1>Help</h1>
 
 
           </section>
@@ -213,6 +199,12 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/react.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function () {
+    $('section').css('min-height', window.innerHeight);
+});
+</script>
 
 </body>
 
