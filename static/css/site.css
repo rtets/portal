@@ -11,3 +11,27 @@
  .root-menu-item {
      text-align: center;
  }
+
+.chart-icon {
+    width: 180px;
+
+}
+
+.alternate-section {
+    background-color: #eee;
+}
+
+.footer-dark {
+    background-color: #000;
+    height: 100px;
+    padding: 20px;
+}
+
+.social {
+    height: 40px;
+    font-size: 30pt;
+}
+
+.social :hover {
+    color: #ffff00;
+}
