@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "./node_modules/jasmine/bin/jasmine.js"
+    "test": "./node_modules/jasmine/bin/jasmine.js",
+    "build": "./node_modules/.bin/browserify ./src/app.jsx -o ./static/js/app.js -t babelify"
   },
   "repository": {
     "type": "git",
@@ -22,12 +23,19 @@
   },
   "homepage": "https://github.com/rtets/portal#readme",
   "dependencies": {
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babelify": "7.3.0",
     "bootstrap": "3.3.7",
+    "browserify": "13.0.1",
     "express": "4.14.1",
     "frontend-dependencies": "0.2.1",
     "jasmine": "2.5.3",
     "jquery": "3.1.1",
-    "react": "15.4.2"
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "uglify": "0.1.5",
+    "watchify": "3.7.0"
   },
   "frontendDependencies": {
     "target": "static/packages",
