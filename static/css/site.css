@@ -46,3 +46,19 @@ section {
 .social :hover {
     color: #ffff00;
 }
+
+.channels-container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width:80%;
+    min-height:500px;
+}
+
+.channel-container {
+    border: 1px solid #aaa;
+    min-width: 350px;
+    min-height: 200px;
+
+}

@@ -4,7 +4,9 @@ var config = require('./config.json')
 
 var app = express()
 
-//app.use('/api', api);
+var api = require('./api')
+
+app.use('/api', api);
 app.use('/', express.static(__dirname + '/static')); // redirect root
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect jquery JS
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS

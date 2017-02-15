@@ -20508,125 +20508,195 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Pig = function (_React$Component) {
-  _inherits(Pig, _React$Component);
+    _inherits(Pig, _React$Component);
 
-  function Pig() {
-    _classCallCheck(this, Pig);
+    function Pig() {
+        _classCallCheck(this, Pig);
 
-    return _possibleConstructorReturn(this, (Pig.__proto__ || Object.getPrototypeOf(Pig)).apply(this, arguments));
-  }
-
-  _createClass(Pig, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement('img', { src: 'img/pig.png' });
+        return _possibleConstructorReturn(this, (Pig.__proto__ || Object.getPrototypeOf(Pig)).apply(this, arguments));
     }
-  }]);
 
-  return Pig;
+    _createClass(Pig, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('img', { src: 'img/pig.png' });
+        }
+    }]);
+
+    return Pig;
 }(_react2.default.Component);
 
 var Navitem = function (_React$Component2) {
-  _inherits(Navitem, _React$Component2);
+    _inherits(Navitem, _React$Component2);
 
-  function Navitem() {
-    _classCallCheck(this, Navitem);
+    function Navitem() {
+        _classCallCheck(this, Navitem);
 
-    return _possibleConstructorReturn(this, (Navitem.__proto__ || Object.getPrototypeOf(Navitem)).apply(this, arguments));
-  }
-
-  _createClass(Navitem, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'li',
-        { className: 'root-menu-item' },
-        _react2.default.createElement(
-          'a',
-          { href: this.props.linkdest },
-          _react2.default.createElement('span', { className: "glyphicon glyphicon-" + this.props.glyphname }),
-          ' ',
-          this.props.name
-        )
-      );
+        return _possibleConstructorReturn(this, (Navitem.__proto__ || Object.getPrototypeOf(Navitem)).apply(this, arguments));
     }
-  }]);
 
-  return Navitem;
+    _createClass(Navitem, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'li',
+                { className: 'root-menu-item' },
+                _react2.default.createElement(
+                    'a',
+                    { href: this.props.linkdest },
+                    _react2.default.createElement('span', { className: "glyphicon glyphicon-" + this.props.glyphname }),
+                    ' ',
+                    this.props.name
+                )
+            );
+        }
+    }]);
+
+    return Navitem;
 }(_react2.default.Component);
 
 var Nav = function (_React$Component3) {
-  _inherits(Nav, _React$Component3);
+    _inherits(Nav, _React$Component3);
 
-  function Nav() {
-    _classCallCheck(this, Nav);
+    function Nav() {
+        _classCallCheck(this, Nav);
 
-    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
-  }
-
-  _createClass(Nav, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'nav',
-        { className: 'navbar navbar-default navbar-fixed-top' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'navbar-header' },
-            _react2.default.createElement(
-              'a',
-              { className: 'navbar-brand', href: '#' },
-              _react2.default.createElement('img', { src: '/img/portal.png' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'navbar-collapse collapse' },
-            _react2.default.createElement(
-              'ul',
-              { className: 'nav navbar-nav navbar-right' },
-              _react2.default.createElement(Navitem, { name: 'Reports', glyphname: 'stats', linkdest: '#reports' }),
-              _react2.default.createElement(Navitem, { name: 'Workspaces', glyphname: 'blackboard', linkdest: '#workspaces' }),
-              _react2.default.createElement(Navitem, { name: 'Community', glyphname: 'comment', linkdest: '#community' }),
-              _react2.default.createElement(Navitem, { name: 'Help', glyphname: 'question-sign', linkdest: '#help' }),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'form',
-                  { className: 'navbar-form', role: 'search' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'input-group' },
-                    _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search', name: 'srch-term', id: 'srch-term' }),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'input-group-btn' },
-                      _react2.default.createElement(
-                        'button',
-                        { className: 'btn btn-default', type: 'submit' },
-                        _react2.default.createElement('i', { className: 'glyphicon glyphicon-search' })
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          )
-        )
-      );
+        return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
     }
-  }]);
 
-  return Nav;
+    _createClass(Nav, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'nav',
+                { className: 'navbar navbar-default navbar-fixed-top' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'navbar-header' },
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'navbar-brand', href: '#' },
+                            _react2.default.createElement('img', { src: '/img/portal.png' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'navbar-collapse collapse' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'nav navbar-nav navbar-right' },
+                            _react2.default.createElement(Navitem, { name: 'Reports', glyphname: 'stats', linkdest: '#reports' }),
+                            _react2.default.createElement(Navitem, { name: 'Workspaces', glyphname: 'blackboard', linkdest: '#workspaces' }),
+                            _react2.default.createElement(Navitem, { name: 'Community', glyphname: 'comment', linkdest: '#community' }),
+                            _react2.default.createElement(Navitem, { name: 'Help', glyphname: 'question-sign', linkdest: '#help' }),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'form',
+                                    { className: 'navbar-form', role: 'search' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'input-group' },
+                                        _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search', name: 'srch-term', id: 'srch-term' }),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'input-group-btn' },
+                                            _react2.default.createElement(
+                                                'button',
+                                                { className: 'btn btn-default', type: 'submit' },
+                                                _react2.default.createElement('i', { className: 'glyphicon glyphicon-search' })
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Nav;
 }(_react2.default.Component);
 
 ;
 
+var Channel = function (_React$Component4) {
+    _inherits(Channel, _React$Component4);
+
+    function Channel() {
+        _classCallCheck(this, Channel);
+
+        return _possibleConstructorReturn(this, (Channel.__proto__ || Object.getPrototypeOf(Channel)).apply(this, arguments));
+    }
+
+    _createClass(Channel, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'channel-container' },
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    this.props.name
+                )
+            );
+        }
+    }]);
+
+    return Channel;
+}(_react2.default.Component);
+
+var Channels = function (_React$Component5) {
+    _inherits(Channels, _React$Component5);
+
+    function Channels() {
+        _classCallCheck(this, Channels);
+
+        return _possibleConstructorReturn(this, (Channels.__proto__ || Object.getPrototypeOf(Channels)).apply(this, arguments));
+    }
+
+    _createClass(Channels, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'channels-container' },
+                _react2.default.createElement(Channel, { name: 'Favorites' }),
+                _react2.default.createElement(Channel, { name: 'Trending' })
+            );
+        }
+    }]);
+
+    return Channels;
+}(_react2.default.Component);
+
+var Main = function (_React$Component6) {
+    _inherits(Main, _React$Component6);
+
+    function Main() {
+        _classCallCheck(this, Main);
+
+        return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+    }
+
+    _createClass(Main, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(Channels, null);
+        }
+    }]);
+
+    return Main;
+}(_react2.default.Component);
+
 _reactDom2.default.render(_react2.default.createElement(Nav, null), document.querySelector('#mainnav'));
-_reactDom2.default.render(_react2.default.createElement(Pig, null), document.querySelector('#mainapp'));
+_reactDom2.default.render(_react2.default.createElement(Main, null), document.querySelector('#mainapp'));
 
 },{"react":177,"react-dom":26}]},{},[178]);

@@ -45,5 +45,34 @@ class Nav extends React.Component {
   }
 };
 
+class Channel extends React.Component {
+    render() {
+        return (
+            <div className="channel-container">
+                <h1>{this.props.name}</h1>
+            </div>
+        )
+    }
+}
+
+class Channels extends React.Component {
+    render() {
+        return (
+            <div className="channels-container">
+                <Channel name="Favorites" />
+                <Channel name="Trending" />
+            </div>
+        )
+    }
+}
+
+class Main extends React.Component {
+    render() {
+        return (
+            <Channels />
+        )
+    }
+}
+
 ReactDOM.render(<Nav />, document.querySelector('#mainnav'));
-ReactDOM.render(<Pig />, document.querySelector('#mainapp'));
+ReactDOM.render(<Main />, document.querySelector('#mainapp'));
